@@ -10,8 +10,8 @@ const { contact } = Astro.props;
       <p>Technology Leader · Enterprise Architect · Engineering Multiplier</p>
     </div>
     <div class="footer-links">
-      <a class="footer-icon-link" href={contact.github} target="_blank" rel="noreferrer" aria-label="GitHub" title="GitHub"><img src="https://cdn.simpleicons.org/github/ffffff" alt="" width="20" height="20" /></a>
-      <a class="footer-icon-link" href={contact.linkedin} target="_blank" rel="noreferrer" aria-label="LinkedIn" title="LinkedIn"><img src="https://cdn.simpleicons.org/linkedin/ffffff" alt="" width="20" height="20" /></a>
+      <a class="footer-icon-link" href={contact.github} target="_blank" rel="noreferrer" aria-label="GitHub" title="GitHub"><img src={withBase("/icons/github.svg")} alt="" width="20" height="20" /></a>
+      <a class="footer-icon-link" href={contact.linkedin} target="_blank" rel="noreferrer" aria-label="LinkedIn" title="LinkedIn"><img src={withBase("/icons/linkedin.svg")} alt="" width="20" height="20" /></a>
       <a href={`mailto:${contact.email}`}>Email</a>
     </div>
   </div>
