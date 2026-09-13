@@ -1,0 +1,36 @@
+KAVISH AGARWAL
+Technology Leader | Enterprise Architect | Principal Engineer | Engineering Multiplier
+Austin, Texas
+
+PROFILE
+I lead the design and transformation of complex technology platforms—from legacy modernization and distributed systems to real-time decisioning, cloud, and AI. My career has been shaped in payments and risk, but my core strength is broader: translating ambiguous business problems into scalable platforms, reusable architecture, and teams that can execute independently.
+
+EXPERIENCE
+Visa — Chief Software Engineer / Senior Technical Leadership | 2015–Present | Austin, Texas
+Enterprise platform architecture across payments, fraud, risk, authentication, real-time decisioning, and cloud modernization. Technical leadership of multi-year modernization programs and reusable decisioning foundations. Global team leadership across North America, India, and Europe, including interim senior-director responsibilities. Architecture governance, inner sourcing, design reviews, operational excellence, and AI-enabled engineering practices. Named inventor on U.S. Patent 11,880,845 related to real-time payment decisioning.
+
+PayPal — Member Technical Staff | 2011–2015
+Rules and decisioning-platform modernization across fraud and risk use cases. Technology evaluation and strategic realignment from an initial rules-engine direction to a more appropriate platform path. Early integration of predictive risk scoring into rules-based decisioning in partnership with data science.
+
+Earlier Career — Cognizant, Wipro, GE Capital Services, Virtusa
+Principal Consultant and Technical Consultant roles established the rules-engine, enterprise application, and consulting foundations that later evolved into platform architecture and technical leadership.
+
+EDUCATION & CREDENTIALS
+B.E., Electronics & Communications — Government Engineering College, Bhopal, India
+MIT xPro — Applied Generative AI for Digital Transformation
+MIT xPRO — Designing and Building AI Products and Services
+Stanford — Advanced Cyber Security Certificate
+UT Austin Executive Education — Advocacy, Influence & Power
+TOGAF Certified
+AWS Certified Cloud Practitioner
+Pega PRPC Certified System Architect
+
+PUBLIC WORK
+github.com/kagarwaltech-sys/decisioning-platform
+github.com/kagarwaltech-sys/payment-platform-poc
+github.com/kagarwaltech-sys/purchase-request-copilot
+
+CONTACT
+github.com/kavish-agarwal-tech
+linkedin.com/in/agarwalkavish
+kagarwal.tech@gmail.com

@@ -1,0 +1,19 @@
+---
+interface Props { type: "modernization" | "decisioning" | "a2a" | "governance" | "payments" | "governed"; label?: string }
+const { type, label = "Architecture view" } = Astro.props;
+const diagrams = {
+  modernization: { kicker: "Evolution path", nodes: ["Legacy capability", "Coexistence boundary", "Modern services", "Independent delivery"] },
+  decisioning: { kicker: "Decisioning flow", nodes: ["Authoring / control plane", "Compiled artifacts", "Execution plane", "Decision + trace"] },
+  a2a: { kicker: "Real-time path", nodes: ["Payment request", "Risk API", "Scoring contracts", "Decision + response"] },
+  governance: { kicker: "Enablement loop", nodes: ["Design question", "Open review", "Decision record", "Reusable pattern"] },
+  payments: { kicker: "Authority boundary", nodes: ["Agent / MCP", "Payment API", "State + ledger", "Processor adapters"] },
+  governed: { kicker: "Governed workflow", nodes: ["Model interpretation", "Policy + permissions", "Human approval", "Verified action"] },
+};
+const diagram = diagrams[type];
+---
+<figure class="architecture-diagram" aria-label={label}>
+  <div class="diagram-topline"><span>{diagram.kicker}</span><span>01—04</span></div>
+  <div class="diagram-flow">
+    {diagram.nodes.map((node, index) => <div class="diagram-step"><span class="diagram-index">0{index + 1}</span><strong>{node}</strong>{index < diagram.nodes.length - 1 && <span class="diagram-arrow" aria-hidden="true">↓</span>}</div>)}
+  </div>
+</figure>

@@ -1,0 +1,63 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import SectionHeading from "../components/SectionHeading.astro";
+import CaseStudyCard from "../components/CaseStudyCard.astro";
+import LabCard from "../components/LabCard.astro";
+import Advisory from "../components/Advisory.astro";
+import { capabilities, work, labs } from "../data/content";
+import { withBase } from "../utils/paths";
+---
+<BaseLayout title="Kavish Agarwal | Technology Leader, Enterprise Architect & Engineering Multiplier" description="Technology leader and enterprise architect focused on distributed systems, platform modernization, real-time decisioning, cloud architecture, AI and engineering leadership.">
+  <section class="hero section-pad">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">Austin, Texas · 25+ years in technology</p>
+        <h1>Kavish<br /><em>Agarwal</em></h1>
+        <p class="hero-role">Technology Leader <span>·</span> Enterprise Architect <span>·</span> Engineering Multiplier</p>
+        <p class="hero-statement">I lead the design and transformation of complex technology platforms—from legacy modernization and distributed systems to real-time decisioning, cloud, and AI. My career has been shaped in payments and risk, but my core strength is broader: translating ambiguous business problems into scalable platforms, reusable architecture, and teams that can execute independently.</p>
+        <div class="hero-actions">
+          <a class="button button-dark" href={withBase("/work")}>View selected work <span aria-hidden="true">↗</span></a>
+          <a class="button button-outline" href={withBase("/labs")}>Explore engineering labs</a>
+          <a class="button button-text" href={withBase("/resume")}>Download resume <span aria-hidden="true">↓</span></a>
+        </div>
+      </div>
+      <div class="hero-index" aria-hidden="true">
+        <span>01</span><span>TECHNOLOGY<br />LEADERSHIP</span>
+        <div class="hero-rule"></div>
+        <span>DESIGN · MODERNIZE<br />MULTIPLY</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-pad section-tint">
+    <div class="container">
+      <SectionHeading eyebrow="What I do" title="Architecture that holds up under real conditions." intro="My work sits where technical depth, platform strategy, and organizational scale meet." />
+      <div class="capability-grid">
+        {capabilities.map((capability) => <article class="capability-card"><span class="capability-number">{capability.number}</span><h3>{capability.title}</h3><p>{capability.description}</p><span class="capability-topics">{capability.topics}</span></article>)}
+      </div>
+    </div>
+  </section>
+
+  <section class="section-pad">
+    <div class="container">
+      <div class="section-heading-row"><SectionHeading eyebrow="Selected work" title="A few problems worth going deeper on." intro="Public-safe case studies about platform evolution, decisioning, production excellence, and the people who make architecture scale." /><a class="text-link section-link" href={withBase("/work")}>View all work <span aria-hidden="true">↗</span></a></div>
+      <div class="work-grid">{work.slice(0, 4).map((study) => <CaseStudyCard study={study} />)}</div>
+    </div>
+  </section>
+
+  <section class="section-pad section-dark">
+    <div class="container">
+      <div class="section-heading-row"><SectionHeading eyebrow="Engineering labs" title="Still building to learn." intro="Independent public POCs are where I test architecture ideas hands-on, with synthetic data and no employer systems." /><a class="text-link text-link-light section-link" href={withBase("/labs")}>View the labs <span aria-hidden="true">↗</span></a></div>
+      <div class="lab-grid">{labs.map((lab) => <LabCard lab={lab} />)}</div>
+    </div>
+  </section>
+
+  <section class="section-pad ai-section">
+    <div class="container ai-grid">
+      <div><p class="eyebrow">Point of view</p><h2>Agentic systems should be governed enterprise systems—not autonomous chatbots.</h2></div>
+      <div><p>Models are useful for interpretation, planning, summarization, and flexible interaction. Deterministic services remain essential for state, policy, permissions, financial invariants, and actions that require repeatability or auditability.</p><a class="text-link" href={withBase("/labs/governed-ai")}>How I think about agentic AI <span aria-hidden="true">↗</span></a></div>
+    </div>
+  </section>
+
+  <Advisory />
+</BaseLayout>

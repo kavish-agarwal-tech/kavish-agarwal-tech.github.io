@@ -1,0 +1,17 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import ArchitectureDiagram from "../../components/ArchitectureDiagram.astro";
+import { work } from "../../data/content";
+import { withBase } from "../../utils/paths";
+
+export function getStaticPaths() {
+  return work.map((study) => ({ params: { slug: study.slug }, props: { study } }));
+}
+const { study } = Astro.props;
+---
+<BaseLayout title={study.title} description={study.summary}>
+  <article class="case-study">
+    <section class="case-hero section-pad"><div class="container case-hero-grid"><div><p class="eyebrow">{study.eyebrow} · public-safe narrative</p><h1>{study.title}</h1><p class="lede">{study.summary}</p><div class="tag-list">{study.tags.map((tag) => <span>{tag}</span>)}</div></div>{study.diagram && <ArchitectureDiagram type={study.diagram} label={`${study.title} architecture view`} />}</div></section>
+    <section class="section-pad"><div class="container case-content"><div class="case-main"><section><p class="eyebrow">01 · Context</p><p>{study.context}</p></section><section><p class="eyebrow">02 · Challenge</p><p>{study.challenge}</p></section><section><p class="eyebrow">03 · My role</p><p>{study.role}</p></section><section><p class="eyebrow">04 · Approach</p><p>{study.approach}</p></section><section><p class="eyebrow">05 · Key decisions & tradeoffs</p><ul>{study.decisions.map((decision) => <li>{decision}</li>)}</ul></section><section><p class="eyebrow">06 · Impact</p><p>{study.impact}</p></section><section><p class="eyebrow">07 · Leadership / multiplier effect</p><p>{study.multiplier}</p></section><section><p class="eyebrow">08 · Lessons</p><ul>{study.lessons.map((lesson) => <li>{lesson}</li>)}</ul></section></div><aside class="case-aside"><p class="eyebrow">The throughline</p><p>Good architecture makes the next decision easier—for the system and for the people working on it.</p><a class="text-link" href={withBase("/work")}>Back to selected work <span aria-hidden="true">↗</span></a></aside></div></section>
+  </article>
+</BaseLayout>

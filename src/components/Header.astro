@@ -1,0 +1,35 @@
+---
+import { withBase } from "../utils/paths";
+import { contact } from "../data/content";
+
+const navigation = [
+  ["Work", "/work"],
+  ["Engineering Labs", "/labs"],
+  ["Leadership", "/leadership"],
+  ["About", "/about"],
+  ["Resume", "/resume"],
+];
+---
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="wordmark" href={withBase("/")} aria-label="Kavish Agarwal home">
+      <span class="wordmark-mark">KA</span>
+      <span>Kavish Agarwal</span>
+    </a>
+    <nav class="desktop-nav" aria-label="Primary navigation">
+      <a href={withBase("/")}>Home</a>
+      {navigation.map(([label, href]) => <a href={withBase(href)}>{label}</a>)}
+    </nav>
+    <div class="header-links">
+      <a href={contact.github} target="_blank" rel="noreferrer" aria-label="GitHub">GH</a>
+      <a href="https://linkedin.com/in/agarwalkavish" target="_blank" rel="noreferrer" aria-label="LinkedIn">in</a>
+    </div>
+    <details class="mobile-menu">
+      <summary aria-label="Open navigation menu"><span></span><span></span></summary>
+      <nav aria-label="Mobile navigation">
+        <a href={withBase("/")}>Home</a>
+        {navigation.map(([label, href]) => <a href={withBase(href)}>{label}</a>)}
+      </nav>
+    </details>
+  </div>
+</header>

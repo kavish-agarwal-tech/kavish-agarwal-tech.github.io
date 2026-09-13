@@ -1,0 +1,5 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { withBase } from "../utils/paths";
+---
+<BaseLayout title="Page not found" description="The requested page could not be found."><section class="page-intro section-pad"><div class="container narrow"><p class="eyebrow">404</p><h1>This path does not lead anywhere useful.</h1><p class="lede">Try returning to the portfolio home or browse the selected work.</p><a class="button button-dark" href={withBase("/")}>Return home <span aria-hidden="true">↗</span></a></div></section></BaseLayout>

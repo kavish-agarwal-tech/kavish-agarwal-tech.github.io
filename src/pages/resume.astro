@@ -1,0 +1,11 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { career, credentials } from "../data/content";
+import { withBase } from "../utils/paths";
+---
+<BaseLayout title="Resume" description="Public resume for Kavish Agarwal, technology leader, enterprise architect, principal engineer, and engineering multiplier.">
+  <section class="page-intro section-pad section-dark"><div class="container narrow"><p class="eyebrow">Resume</p><h1>Technology leader. Enterprise architect. Engineering multiplier.</h1><p class="lede">A concise public version of my experience across platform architecture, modernization, distributed systems, decisioning, cloud, AI, and engineering leadership.</p><div class="hero-actions"><a class="button button-light" href={withBase("/Kavish-Agarwal-Resume.txt")} download>Download public resume <span aria-hidden="true">↓</span></a></div></div></section>
+  <section class="section-pad"><div class="container resume-grid"><div><p class="eyebrow">Profile</p><h2>Hands-on architecture with organizational scale.</h2></div><div class="prose"><p>I build and modernize mission-critical platforms across payments, fraud, risk, cloud, and AI—and help the engineers around me become stronger technical leaders. My work combines hands-on architecture with reusable platform thinking, production discipline, and organizational scale.</p></div></div></section>
+  <section class="section-pad section-tint"><div class="container"><p class="eyebrow">Experience</p><div class="resume-list">{career.map((entry) => <article><div class="timeline-heading"><h3>{entry.company}</h3><span>{entry.period}</span></div><p class="timeline-title">{entry.title}</p><p>{entry.details}</p></article>)}</div></div></section>
+  <section class="section-pad"><div class="container credentials-grid"><div><p class="eyebrow">Education & credentials</p><h2>Continued learning, kept practical.</h2></div><ul class="credential-list">{credentials.map((credential) => <li>{credential}</li>)}</ul></div></section>
+</BaseLayout>

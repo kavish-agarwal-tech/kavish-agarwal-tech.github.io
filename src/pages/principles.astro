@@ -1,0 +1,9 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import SectionHeading from "../components/SectionHeading.astro";
+import { principles } from "../data/content";
+---
+<BaseLayout title="Architecture Principles" description="A concise set of architecture and engineering leadership principles from Kavish Agarwal.">
+  <section class="page-intro section-pad"><div class="container narrow"><p class="eyebrow">Architecture principles</p><h1>Useful principles stay close to decisions.</h1><p class="lede">These are not an academic manifesto. They are reminders for making architecture, operations, and organizational scale visible in the same conversation.</p></div></section>
+  <section class="section-pad section-tint"><div class="container principles-list">{principles.map(([title, text], index) => <article><span class="principle-number">0{index + 1}</span><div><h2>{title}</h2><p>{text}</p></div></article>)}</div></section>
+</BaseLayout>

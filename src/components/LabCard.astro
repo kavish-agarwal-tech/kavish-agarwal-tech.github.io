@@ -1,0 +1,16 @@
+---
+import type { Lab } from "../data/content";
+import { withBase } from "../utils/paths";
+interface Props { lab: Lab }
+const { lab } = Astro.props;
+---
+<article class="lab-card">
+  <div class="lab-card-number">{lab.number}</div>
+  <h3>{lab.title}</h3>
+  <p>{lab.summary}</p>
+  <div class="tag-list">{lab.themes.slice(0, 3).map((theme) => <span>{theme}</span>)}</div>
+  <div class="card-actions">
+    <a class="text-link" href={withBase(`/labs/${lab.slug}`)}>Explore lab <span aria-hidden="true">↗</span></a>
+    <a class="muted-link" href={lab.repo} target="_blank" rel="noreferrer">GitHub</a>
+  </div>
+</article>

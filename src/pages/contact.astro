@@ -1,0 +1,10 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Advisory from "../components/Advisory.astro";
+import { contact } from "../data/content";
+---
+<BaseLayout title="Contact Kavish Agarwal" description="Contact Kavish Agarwal for advisory, consulting, speaking, or senior technology leadership opportunities.">
+  <section class="page-intro section-pad section-dark"><div class="container narrow"><p class="eyebrow">Contact</p><h1>Let’s talk about the problem worth solving.</h1><p class="lede">For advisory, consulting, speaking, or leadership opportunities, feel free to reach out through LinkedIn or email.</p></div></section>
+  <section class="section-pad"><div class="container contact-grid"><div><p class="eyebrow">Find me online</p><h2>Thoughtful conversations welcome.</h2></div><div class="contact-links"><a href={`mailto:${contact.email}`}><span>Email</span><strong>{contact.email}</strong><span aria-hidden="true">↗</span></a><a href={contact.linkedin} target="_blank" rel="noreferrer"><span>LinkedIn</span><strong>linkedin.com/in/agarwalkavish</strong><span aria-hidden="true">↗</span></a><a href={contact.github} target="_blank" rel="noreferrer"><span>GitHub</span><strong>github.com/kavish-agarwal-tech</strong><span aria-hidden="true">↗</span></a></div></div></section>
+  <Advisory />
+</BaseLayout>

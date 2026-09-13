@@ -1,0 +1,17 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import ArchitectureDiagram from "../../components/ArchitectureDiagram.astro";
+import { labs } from "../../data/content";
+import { withBase } from "../../utils/paths";
+
+export function getStaticPaths() {
+  return labs.map((lab) => ({ params: { slug: lab.slug }, props: { lab } }));
+}
+const { lab } = Astro.props;
+---
+<BaseLayout title={lab.title} description={lab.summary}>
+  <article class="lab-detail">
+    <section class="case-hero section-pad section-dark"><div class="container case-hero-grid"><div><p class="eyebrow">{lab.number} · independent public POC</p><h1>{lab.title}</h1><p class="lede">{lab.summary}</p><div class="tag-list">{lab.themes.map((theme) => <span>{theme}</span>)}</div><a class="button button-light" href={lab.repo} target="_blank" rel="noreferrer">View on GitHub <span aria-hidden="true">↗</span></a></div>{lab.diagram && <ArchitectureDiagram type={lab.diagram} label={`${lab.title} architecture view`} />}</div></section>
+    <section class="section-pad"><div class="container case-content"><div class="case-main"><section><p class="eyebrow">What was explored</p><p>{lab.explored}</p></section><section><p class="eyebrow">What I learned</p><p>{lab.learned}</p></section><section><p class="eyebrow">Architecture themes</p><div class="tag-list tag-list-large">{lab.themes.map((theme) => <span>{theme}</span>)}</div></section><section><p class="eyebrow">Technologies</p><ul>{lab.technologies.map((technology) => <li>{technology}</li>)}</ul></section></div><aside class="case-aside"><p class="eyebrow">Implementation detail</p><p>The portfolio provides context; GitHub provides the implementation detail and current state of the experiment.</p><a class="text-link" href={withBase("/labs")}>Back to Engineering Labs <span aria-hidden="true">↗</span></a></aside></div></section>
+  </article>
+</BaseLayout>

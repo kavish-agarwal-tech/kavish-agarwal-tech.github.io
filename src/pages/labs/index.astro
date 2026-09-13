@@ -1,0 +1,10 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import SectionHeading from "../../components/SectionHeading.astro";
+import LabCard from "../../components/LabCard.astro";
+import { labs } from "../../data/content";
+---
+<BaseLayout title="Engineering Labs" description="Independent architecture experiments in decisioning platforms, payment systems, MCP, and governed AI workflows.">
+  <section class="page-intro section-pad"><div class="container narrow"><p class="eyebrow">Engineering labs</p><h1>Production experience teaches me which problems matter.</h1><p class="lede">Engineering labs give me a place to reconsider how I would solve those problems with today’s tools and architectural patterns. These are independent projects built outside employer systems with synthetic data.</p></div></section>
+  <section class="section-pad section-dark"><div class="container"><div class="lab-grid lab-grid-page">{labs.map((lab) => <LabCard lab={lab} />)}</div></div></section>
+</BaseLayout>

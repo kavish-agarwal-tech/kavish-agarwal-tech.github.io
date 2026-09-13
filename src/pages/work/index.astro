@@ -1,0 +1,10 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import SectionHeading from "../../components/SectionHeading.astro";
+import CaseStudyCard from "../../components/CaseStudyCard.astro";
+import { work } from "../../data/content";
+---
+<BaseLayout title="Selected Work" description="Public-safe case studies on modernization, reusable decisioning platforms, real-time risk systems, governance, and technology strategy.">
+  <section class="page-intro section-pad"><div class="container narrow"><p class="eyebrow">Selected work</p><h1>How I approach difficult platform problems.</h1><p class="lede">These case studies focus on context, architectural choices, tradeoffs, and multiplier effects. They intentionally omit confidential implementation details, customer information, and non-public operating metrics.</p></div></section>
+  <section class="section-pad section-tint"><div class="container"><div class="work-grid work-grid-wide">{work.map((study) => <CaseStudyCard study={study} />)}</div></div></section>
+</BaseLayout>

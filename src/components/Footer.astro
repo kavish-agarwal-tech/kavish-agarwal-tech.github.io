@@ -1,0 +1,22 @@
+---
+import { withBase } from "../utils/paths";
+interface Props { contact: { email: string; github: string; linkedin: string } }
+const { contact } = Astro.props;
+---
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <a class="footer-name" href={withBase("/")}>Kavish Agarwal</a>
+      <p>Technology Leader · Enterprise Architect · Engineering Multiplier</p>
+    </div>
+    <div class="footer-links">
+      <a href={contact.github} target="_blank" rel="noreferrer">GitHub</a>
+      <a href={contact.linkedin} target="_blank" rel="noreferrer">LinkedIn</a>
+      <a href={`mailto:${contact.email}`}>Email</a>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>Built as a static site and hosted on GitHub Pages.</span>
+    <a href={withBase("/contact")}>Get in touch <span aria-hidden="true">↗</span></a>
+  </div>
+</footer>
