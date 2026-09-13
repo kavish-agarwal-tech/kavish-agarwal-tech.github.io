@@ -1,0 +1,32 @@
+---
+import { earlyCareer, careerProgression } from "../data/content";
+
+const { compact = false } = Astro.props;
+---
+
+<section class:list={["career-journey", { "career-journey-compact": compact }]} id={compact ? undefined : "earlier-career"}>
+  <div class="career-journey-header">
+    <div>
+      <p class="eyebrow">Career journey</p>
+      <h2>Earlier Career – Building the Foundations</h2>
+    </div>
+    {!compact && <p class="career-journey-intro">A concise arc from transactional application engineering to reusable platforms, cross-domain architecture, and technology leadership.</p>}
+  </div>
+
+  {!compact && <>
+    <div class="career-chapters">
+      {earlyCareer.map((chapter) => <article class:list={["career-chapter", { "career-chapter-strong": chapter.emphasis === "strong" }]}>
+        <div class="career-chapter-meta"><span class="career-chapter-number">{chapter.number}</span><h3>{chapter.company}</h3></div>
+        <div class="career-chapter-body">
+          <p class="career-chapter-title">{chapter.title}</p>
+          <p>{chapter.summary}</p>
+          {chapter.highlights && <ul>{chapter.highlights.map((highlight) => <li>{highlight}</li>)}</ul>}
+        </div>
+      </article>)}
+    </div>
+
+    <div class="progression-line" aria-label="Career progression from application engineering to platform and technology leadership">
+      {careerProgression.map((step, index) => <div class="progression-step"><span>{String(index + 1).padStart(2, "0")}</span><strong>{step}</strong></div>)}
+    </div>
+  </>}
+</section>

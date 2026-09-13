@@ -28,6 +28,15 @@ export type Lab = {
   diagram?: "decisioning" | "payments" | "governed";
 };
 
+export type CareerChapter = {
+  number: string;
+  company: string;
+  title: string;
+  summary: string;
+  highlights?: string[];
+  emphasis?: "light" | "strong";
+};
+
 export const capabilities = [
   {
     number: "01",
@@ -206,6 +215,64 @@ export const career = [
   { company: "Visa", period: "2015–Present", title: "Chief Software Engineer / Senior Technical Leadership", details: "Enterprise platform architecture across payments, fraud, risk, authentication, real-time decisioning, and cloud modernization. Technical leadership of multi-year modernization programs and reusable decisioning foundations. Global team leadership across North America, India, and Europe, including interim senior-director responsibilities. Architecture governance, inner sourcing, design reviews, operational excellence, and AI-enabled engineering practices." },
   { company: "PayPal", period: "2011–2015", title: "Member Technical Staff", details: "Rules and decisioning-platform modernization across fraud and risk use cases. Technology evaluation and strategic realignment from an initial rules-engine direction to a more appropriate platform path. Early integration of predictive risk scoring into rules-based decisioning in partnership with data science." },
   { company: "Earlier career", period: "Before 2011", title: "Cognizant · Wipro · GE Capital Services · Virtusa", details: "Principal Consultant and Technical Consultant roles established the rules-engine, enterprise application, and consulting foundations that later evolved into platform architecture and technical leadership." },
+];
+
+export const earlyCareer: CareerChapter[] = [
+  {
+    number: "01",
+    company: "StreamSoft India",
+    title: "Early application engineering",
+    summary: "Built transactional application capabilities and gained early client exposure, establishing a foundation in integration-heavy enterprise software and adapting quickly to unfamiliar domains.",
+    emphasis: "light",
+  },
+  {
+    number: "02",
+    company: "Virtusa",
+    title: "From application work to platform thinking",
+    summary: "Contributed to PegaRULES Process Commander modernization, including expression-language parser/compiler work. This was an early shift from standalone applications toward reusable platform capabilities and productization thinking.",
+    emphasis: "light",
+  },
+  {
+    number: "03",
+    company: "GE Capital",
+    title: "Enterprise process automation",
+    summary: "Applied a rules and workflow platform to enterprise process automation, reinforcing the connection between platform capability and business-process outcomes.",
+    emphasis: "light",
+  },
+  {
+    number: "04",
+    company: "Wipro",
+    title: "Technical leadership, people management, and rules architecture",
+    summary: "Expanded from technical delivery into people management and rules architecture. On a Medicare claims modernization program, worked with FICO Blaze Advisor for rules-driven claim validation and decisioning. A configuration-driven core supported different state requirements through rules and configuration, and later work extended to onsite, client-facing architecture in a regulated pharmacy-claims environment.",
+    highlights: [
+      "Technical leadership, mentoring, and people management.",
+      "Rules-driven Medicare claims modernization using FICO Blaze Advisor.",
+      "Configuration-driven, multi-state platform thinking.",
+      "Client-facing architecture in regulated pharmacy systems.",
+    ],
+    emphasis: "strong",
+  },
+  {
+    number: "05",
+    company: "Cognizant",
+    title: "Cross-domain architecture and solution leadership",
+    summary: "Broadened from rules specialist to cross-domain enterprise architect across insurance, financial services, and healthcare. This phase combined modernization architecture, early data-platform work, client influence, distributed delivery, and pre-sale solution leadership.",
+    highlights: [
+      "Cross-domain architecture across insurance, financial services, and healthcare.",
+      "Modernization architecture at Florida Power and Light.",
+      "Early data-platform architecture at Dun and Bradstreet.",
+      "Pre-sale solution leadership.",
+    ],
+    emphasis: "strong",
+  },
+];
+
+export const careerProgression = [
+  "Application engineering",
+  "Domain expertise",
+  "Configuration-driven platforms",
+  "Cross-domain architecture",
+  "Platform & technology leadership",
 ];
 
 export const credentials = [
