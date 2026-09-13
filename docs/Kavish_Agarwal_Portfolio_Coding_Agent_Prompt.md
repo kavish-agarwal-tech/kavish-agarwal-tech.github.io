@@ -62,7 +62,7 @@ Do not extensively rewrite approved portfolio content on your own. You may short
 
 GitHub profile:
 
-**https://github.com/kagarwaltech-sys**
+**https://github.com/kavish-agarwal-tech**
 
 The site should link to selected repositories, but GitHub should act as **supporting evidence**, not dominate the site.
 
@@ -72,7 +72,7 @@ Feature these projects prominently under **Engineering Labs**:
 
 Repository:
 
-`kagarwaltech-sys/decisioning-platform`
+`kavish-agarwal-tech/decisioning-platform`
 
 Position it as an independent architecture lab exploring a modern generalized decisioning platform.
 
@@ -97,7 +97,7 @@ This is an independent POC, not production employer code.
 
 Repository:
 
-`kagarwaltech-sys/payment-platform-poc`
+`kavish-agarwal-tech/payment-platform-poc`
 
 Related work may include:
 
@@ -128,7 +128,7 @@ The agent does not bypass the system of record.
 
 Repository:
 
-`kagarwaltech-sys/purchase-request-copilot`
+`kavish-agarwal-tech/purchase-request-copilot`
 
 Includes experimentation around:
 

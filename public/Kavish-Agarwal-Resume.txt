@@ -26,9 +26,9 @@ AWS Certified Cloud Practitioner
 Pega PRPC Certified System Architect
 
 PUBLIC WORK
-github.com/kagarwaltech-sys/decisioning-platform
-github.com/kagarwaltech-sys/payment-platform-poc
-github.com/kagarwaltech-sys/purchase-request-copilot
+github.com/kavish-agarwal-tech/decisioning-platform
+github.com/kavish-agarwal-tech/payment-platform-poc
+github.com/kavish-agarwal-tech/purchase-request-copilot
 
 CONTACT
 github.com/kavish-agarwal-tech

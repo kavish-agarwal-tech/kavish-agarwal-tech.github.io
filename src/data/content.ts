@@ -163,7 +163,7 @@ export const labs: Lab[] = [
     explored: "The lab tests deterministic decisions, traces, rollback, a lightweight authoring model, rule lifecycle, and atomic activation. It is an independent architecture experiment built with synthetic data, not employer code.",
     learned: "It creates a compact place to revisit a domain I know deeply and explore how an execution-first decisioning foundation might be designed with today's tools and boundaries.",
     technologies: ["Go", "Policy execution", "Rule compilation", "Multi-tenancy"],
-    repo: "https://github.com/kagarwaltech-sys/decisioning-platform",
+    repo: "https://github.com/kavish-agarwal-tech/decisioning-platform",
     diagram: "decisioning",
   },
   {
@@ -175,7 +175,7 @@ export const labs: Lab[] = [
     explored: "The experiment combines a payment API with PostgreSQL-backed concepts, refunds, Stripe and Adyen adapter shapes, MCP tools, and a controlled agent. Related repositories include payment-platform-mcp and payment-platform-agent.",
     learned: "The payment API remains authoritative for payment state. MCP and the agent operate through controlled interfaces rather than bypassing the domain service or system of record.",
     technologies: ["Go", "PostgreSQL", "MCP", "Stripe / Adyen adapter concepts"],
-    repo: "https://github.com/kagarwaltech-sys/payment-platform-poc",
+    repo: "https://github.com/kavish-agarwal-tech/payment-platform-poc",
     diagram: "payments",
   },
   {
@@ -187,7 +187,7 @@ export const labs: Lab[] = [
     explored: "The portfolio POC covers a controlled purchase workflow and a LangGraph-based incident triage flow. It uses explicit workflow state, approval gates, constrained MCP capabilities, runbooks, and observable transitions.",
     learned: "Enterprise AI needs workflow, policy, observability, and human control—not just model calls. Model prose remains untrusted until it is grounded in verified state and allowed actions.",
     technologies: ["LangGraph", "MCP", "Workflow state", "Policy gates"],
-    repo: "https://github.com/kagarwaltech-sys/purchase-request-copilot",
+    repo: "https://github.com/kavish-agarwal-tech/purchase-request-copilot",
     diagram: "governed",
   },
 ];
