@@ -67,6 +67,9 @@ ul { padding-left: 1.2rem; }
 .desktop-nav a, .header-links a { color: var(--ink-soft); font-size: .74rem; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; }
 .desktop-nav a:hover, .header-links a:hover { color: var(--accent); }
 .header-links { display: flex; gap: .8rem; padding-left: 1.2rem; border-left: 1px solid var(--line); }
+.header-links a, .footer-icon-link { display: inline-flex; align-items: center; justify-content: center; }
+.header-links img, .footer-icon-link img { display: block; width: 18px; height: 18px; }
+.footer-icon-link img { width: 20px; height: 20px; }
 .mobile-menu { display: none; margin-left: auto; }
 .mobile-menu summary { display: grid; gap: 5px; padding: .5rem; cursor: pointer; list-style: none; }
 .mobile-menu summary::-webkit-details-marker { display: none; }

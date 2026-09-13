@@ -172,7 +172,7 @@ Requirements:
 - All routes must work correctly when deployed under GitHub Pages.
 - Configure Astro appropriately for GitHub Pages deployment.
 - Support both:
-  - user site deployment such as `https://kagarwaltech-sys.github.io`
+  - user site deployment such as `https://kavish-agarwal-tech.github.io`
   - project-site deployment under a repository subpath if needed
 - Avoid absolute asset paths that break under repository subpaths.
 - Use Astro's `base` and `site` configuration correctly.
@@ -1163,4 +1163,3 @@ Do not consider the project complete until:
 - the site works under both a root user-site URL and a repository subpath deployment
 - no confidential employer details are exposed
 - the Advisory & Consulting section is present and understated
-
