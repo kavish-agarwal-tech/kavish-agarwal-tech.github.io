@@ -220,27 +220,19 @@ export const career = [
 export const earlyCareer: CareerChapter[] = [
   {
     number: "01",
-    company: "StreamSoft India",
-    title: "Early application engineering",
-    summary: "Built transactional application capabilities and gained early client exposure, establishing a foundation in integration-heavy enterprise software and adapting quickly to unfamiliar domains.",
-    emphasis: "light",
+    company: "Cognizant",
+    title: "Cross-domain architecture and solution leadership",
+    summary: "Broadened from rules specialist to cross-domain enterprise architect across insurance, financial services, and healthcare. This phase combined modernization architecture, early data-platform work, client influence, distributed delivery, and pre-sale solution leadership.",
+    highlights: [
+      "Cross-domain architecture across insurance, financial services, and healthcare.",
+      "Modernization architecture at Florida Power and Light.",
+      "Early data-platform architecture at Dun and Bradstreet.",
+      "Pre-sale solution leadership.",
+    ],
+    emphasis: "strong",
   },
   {
     number: "02",
-    company: "Virtusa",
-    title: "From application work to platform thinking",
-    summary: "Contributed to PegaRULES Process Commander modernization, including expression-language parser/compiler work. This was an early shift from standalone applications toward reusable platform capabilities and productization thinking.",
-    emphasis: "light",
-  },
-  {
-    number: "03",
-    company: "GE Capital",
-    title: "Enterprise process automation",
-    summary: "Applied a rules and workflow platform to enterprise process automation, reinforcing the connection between platform capability and business-process outcomes.",
-    emphasis: "light",
-  },
-  {
-    number: "04",
     company: "Wipro",
     title: "Technical leadership, people management, and rules architecture",
     summary: "Expanded from technical delivery into people management and rules architecture. On a Medicare claims modernization program, worked with FICO Blaze Advisor for rules-driven claim validation and decisioning. A configuration-driven core supported different state requirements through rules and configuration, and later work extended to onsite, client-facing architecture in a regulated pharmacy-claims environment.",
@@ -253,17 +245,25 @@ export const earlyCareer: CareerChapter[] = [
     emphasis: "strong",
   },
   {
+    number: "03",
+    company: "GE Capital",
+    title: "Enterprise process automation",
+    summary: "Applied a rules and workflow platform to enterprise process automation, reinforcing the connection between platform capability and business-process outcomes.",
+    emphasis: "light",
+  },
+  {
+    number: "04",
+    company: "Virtusa",
+    title: "From application work to platform thinking",
+    summary: "Contributed to PegaRULES Process Commander modernization, including expression-language parser/compiler work. This was an early shift from standalone applications toward reusable platform capabilities and productization thinking.",
+    emphasis: "light",
+  },
+  {
     number: "05",
-    company: "Cognizant",
-    title: "Cross-domain architecture and solution leadership",
-    summary: "Broadened from rules specialist to cross-domain enterprise architect across insurance, financial services, and healthcare. This phase combined modernization architecture, early data-platform work, client influence, distributed delivery, and pre-sale solution leadership.",
-    highlights: [
-      "Cross-domain architecture across insurance, financial services, and healthcare.",
-      "Modernization architecture at Florida Power and Light.",
-      "Early data-platform architecture at Dun and Bradstreet.",
-      "Pre-sale solution leadership.",
-    ],
-    emphasis: "strong",
+    company: "StreamSoft India",
+    title: "Early application engineering",
+    summary: "Built transactional application capabilities and gained early client exposure, establishing a foundation in integration-heavy enterprise software and adapting quickly to unfamiliar domains.",
+    emphasis: "light",
   },
 ];
 
