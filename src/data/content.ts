@@ -40,34 +40,34 @@ export type CareerChapter = {
 export const capabilities = [
   {
     number: "01",
-    title: "Platform Architecture",
-    description: "Designing scalable, reusable platforms rather than one-off solutions.",
-    topics: "Distributed systems · real-time processing · APIs · events · reusable capabilities",
+    title: "Payments, Decisioning & Risk",
+    description: "Designing and evolving real-time payment, fraud, risk, authentication, and decisioning platforms.",
+    topics: "Real-time payments · fraud/risk · authentication · rules · ML integration · orchestration",
   },
   {
     number: "02",
-    title: "Modernization",
-    description: "Moving critical systems forward without destabilizing the business.",
-    topics: "Legacy evolution · incremental decomposition · coexistence · migration · reliability",
+    title: "Enterprise & Platform Architecture",
+    description: "Designing scalable, reusable platforms and distributed systems that support multiple products and teams.",
+    topics: "Distributed systems · APIs · events · reusable capabilities · architecture governance",
   },
   {
     number: "03",
-    title: "Decisioning & Intelligence",
-    description: "Combining rules, data, models, and orchestration into explainable decision systems.",
-    topics: "Real-time decisioning · rules · ML integration · policy execution · explainability",
+    title: "Modernization & Cloud Transformation",
+    description: "Moving mission-critical systems forward without destabilizing the business.",
+    topics: "Legacy evolution · coexistence · migration · cloud · resilience · performance engineering",
   },
   {
     number: "04",
-    title: "Engineering Leadership",
-    description: "Scaling architecture through people, patterns, governance, and technical leadership.",
-    topics: "Mentoring · design reviews · enablement · governance · AI-enabled engineering",
+    title: "Engineering Leadership & AI",
+    description: "Scaling architecture through people, patterns, governance, and responsible AI-enabled engineering.",
+    topics: "Mentoring · design reviews · engineering multiplier · inner sourcing · Agentic AI",
   },
 ];
 
-export const work: CaseStudy[] = [
+const workLibrary: CaseStudy[] = [
   {
     slug: "platform-modernization",
-    eyebrow: "Case study 01",
+    eyebrow: "Case study 03",
     title: "Modernizing a Mission-Critical Global Risk Platform",
     summary: "Evolving a mature risk-management application through staged modernization while protecting continuity for a global user base.",
     tags: ["Modernization", "Migration", "High availability", "Team enablement"],
@@ -107,7 +107,7 @@ export const work: CaseStudy[] = [
   },
   {
     slug: "real-time-payments",
-    eyebrow: "Case study 03",
+    eyebrow: "Case study 01",
     title: "Building and Operating Real-Time A2A Risk Decisioning",
     summary: "Taking a real-time account-to-account risk capability from early service conception through production evolution and global deployment patterns.",
     tags: ["Real-time payments", "Low latency", "Reliability", "Cloud engineering"],
@@ -160,6 +160,14 @@ export const work: CaseStudy[] = [
     multiplier: "I brought deep domain expertise where it was useful, then adapted quickly when the organization needed a different answer. That experience shaped how I coach teams to separate a good technical argument from commitment to a tool.",
     lessons: ["Changing direction is a technical leadership skill when the evidence changes.", "Product alignment is part of architecture quality, not a step after architecture."],
   },
+];
+
+export const work: CaseStudy[] = [
+  workLibrary[2],
+  workLibrary[1],
+  workLibrary[0],
+  workLibrary[3],
+  workLibrary[4],
 ];
 
 export const labs: Lab[] = [
