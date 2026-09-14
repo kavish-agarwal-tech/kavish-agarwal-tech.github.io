@@ -213,9 +213,16 @@ ul { padding-left: 1.2rem; }
 .credential-list { margin: 0; padding: 0; list-style: none; }
 .credential-list li { padding: .9rem 0; border-bottom: 1px solid var(--line); color: var(--ink-soft); }
 .resume-grid h2 { max-width: 500px; }
+.resume-focus-section { margin-top: 4rem; }
+.resume-focus-grid { display: grid; grid-template-columns: repeat(5, 1fr); border-top: 1px solid var(--line); border-left: 1px solid var(--line); }
+.resume-focus-grid article { min-height: 185px; padding: 1.25rem; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.resume-focus-grid h3 { margin-top: 1.5rem; font-size: 1.02rem; }
+.resume-focus-grid p { color: var(--ink-soft); font-size: .86rem; line-height: 1.5; }
 .resume-list { max-width: 850px; margin-top: 2rem; }
 .resume-list article { padding: 2rem 0; border-top: 1px solid var(--line); }
 .resume-list article:last-child { border-bottom: 1px solid var(--line); }
+.resume-list .resume-entry-primary { padding-top: 2.35rem; padding-bottom: 2.35rem; }
+.resume-list .resume-entry-primary h3 { font-size: clamp(1.5rem, 2.7vw, 2.1rem); }
 .contact-links { border-top: 1px solid var(--line); }
 .contact-links a { display: grid; grid-template-columns: 90px 1fr 20px; gap: 1rem; align-items: center; padding: 1.35rem 0; border-bottom: 1px solid var(--line); }
 .contact-links span { color: var(--muted); font-size: .7rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
@@ -255,6 +262,7 @@ ul { padding-left: 1.2rem; }
   .button { width: 100%; }
   .button-text { justify-content: flex-start; }
   .capability-grid, .work-grid, .work-grid-wide, .lab-grid, .leadership-practices { grid-template-columns: 1fr; }
+  .resume-focus-grid { grid-template-columns: 1fr; }
   .capability-card, .lab-grid-page .lab-card { min-height: auto; }
   .capability-card h3, .work-card h3, .lab-card h3, .leadership-practices h3 { margin-top: 2rem; }
   .ai-grid, .advisory-grid, .about-grid, .contact-grid, .resume-grid, .leadership-grid, .credentials-grid { grid-template-columns: 1fr; gap: 2rem; }

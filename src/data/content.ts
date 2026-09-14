@@ -217,6 +217,24 @@ export const career = [
   { company: "Earlier career", period: "Before 2011", title: "Cognizant · Wipro · GE Capital Services · Virtusa", details: "Principal Consultant and Technical Consultant roles established the rules-engine, enterprise application, and consulting foundations that later evolved into platform architecture and technical leadership." },
 ];
 
+export const resumeCareer = [
+  { company: "Visa", period: "2015–Present", title: "Chief Software Engineer / Senior Technical Leadership", details: "Enterprise platform architecture across payments, fraud, risk, authentication, real-time decisioning, and cloud modernization. Led and influenced multi-year modernization programs, reusable decisioning foundations, real-time A2A risk capabilities, architecture governance, operational excellence, and AI-enabled engineering practices. Worked across globally distributed teams and served in interim senior engineering leadership capacity." },
+  { company: "PayPal", period: "2011–2015", title: "Member of Technical Staff", details: "Rules and decisioning-platform modernization across fraud and risk. Evaluated and helped realign an initial technology direction when product needs indicated a different path, then helped evolve the IBM ODM-based platform. Partnered with data science on an early predictive risk-scoring implementation integrated into executable decision flows." },
+  { company: "Cognizant Technology Solutions", period: "2008–2011", title: "Principal Consultant / Solution Architect", details: "Led architecture and solution delivery across utilities, insurance, mortgage servicing, healthcare, and data-services domains. Worked on enterprise modernization, rules and BPM platforms, data-ingestion architectures, client advisory, proof-of-concepts, and pre-sales." },
+  { company: "Wipro Technologies", period: "2004–2008", title: "Technical Architect / Technical Lead / Project Manager", details: "Progressed through technical leadership, project management, and architecture roles across healthcare, pharmacy, retail, and enterprise applications. Served as business-rules architect on Medicare claims modernization, built expertise in FICO Blaze Advisor, mentored engineers, and worked onsite with client architecture teams." },
+  { company: "GE Capital Services", period: "2003–2004", title: "Technical Lead / Pega Architect", details: "Applied PegaRULES Process Commander to enterprise process automation and helped translate platform capabilities into production business solutions. Provided architecture guidance and team mentoring." },
+  { company: "Virtusa", period: "2001–2003", title: "Senior Software Engineer", details: "Built enterprise Java applications and worked on modernization of PegaRULES Process Commander, including a rules-expression parser/compiler. This was an early foundation for platform thinking, business-rules architecture, and reusable product-oriented design." },
+  { company: "StreamSoft", period: "1999–2001", title: "Software Engineer", details: "Built web-based travel-reservation capabilities across airline, hotel, and car-booking workflows using early Java enterprise technologies, with early client-facing experience in the UK." },
+];
+
+export const resumeFocusAreas = [
+  { title: "Payments, Decisioning & Risk", details: "Payments, real-time decisioning, fraud, risk, and A2A capabilities." },
+  { title: "Enterprise & Platform Architecture", details: "Reusable platforms, distributed systems, and cross-domain architecture." },
+  { title: "Modernization & Cloud Transformation", details: "Legacy evolution, cloud architecture, migration, and resilience." },
+  { title: "Leadership & Organizational Scale", details: "Technical leadership, mentoring, governance, and team enablement." },
+  { title: "AI & Engineering Transformation", details: "Applied AI, agentic workflows, and AI-enabled engineering practices." },
+];
+
 export const earlyCareer: CareerChapter[] = [
   {
     number: "01",
